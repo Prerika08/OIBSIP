@@ -1,0 +1,63 @@
+#import java.util.*;
+public class Main{
+public static void main(String[] args){
+char psw="Welcome@123";
+System.out.println("Click the mcq link : https://www.aliensbrain.com/quiz/19717/random-gk-quiz");
+changes ob=new changes();
+ob.getInfo();
+ob.update();
+ob.mcq;
+}
+}
+class changes{
+Scanner sc=new Scanner (System.in);\
+void getInfo()
+{
+System.out.println("Enter the username : ");
+String name=sc.nextLine();
+System.out.println("Enter the password : ");
+char password=sc.nextLine();
+if(password==psw)
+{
+void update()
+{
+System.out.println("Do you want to update profile? Type 1 for yes or 0 for no : ");
+int ch=sc.nextInt();
+switch(ch)
+{
+case(1):
+{
+System.out.println("Enter the updates. First the email : ");
+char e=sc.nextLine();
+System.out.println("Updated dob : ");
+int dob=sc.nextInt();
+break;
+}
+case(0):
+{
+System.out.println("OK");
+break;
+}
+default:
+System.out.println("Invalid choice. Choose a correct one.");
+}
+}
+}
+void mcq()
+{
+int t=5;
+while(t!=0)
+{
+System.out.println("Select answer : ");
+t--;
+}
+System.out.println("Time over. Chance over.");
+return -1;
+}
+}
+else
+{
+System.out.println("Exit.");
+return 0;
+}
+}
